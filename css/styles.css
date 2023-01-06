@@ -53,9 +53,9 @@ img {
 
 .container {
   /* display: flex; */
-  /* min-width: 320px; */
+  min-width: 320px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -297,9 +297,63 @@ img {
   display: block;
 }
 
+.menu-addres {
+  display: none;
+}
+
 .nav-menu {
   display: none;
 }
+.addres-link {
+  color: var(--main-color);
+  line-height: 1.5;
+  text-decoration: none;
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header .nav-link,
+.header .addres-link {
+  transition: color var(--duration-time) var(--timing-function);
+}
+
+.header .nav-link:focus,
+.header .nav-link:hover,
+.header .addres-link:hover,
+.header .addres-link:focus {
+  color: var(--button-color);
+}
+
+/*       Screen >= 768 px      */
+
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    margin-left: 123px;
+    gap: 40px;
+  }
+  .menu-addres {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 4px;
+  }
+  .addres-link {
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 1.333334;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+  }
+  .nav-link {
+    padding-bottom: 22px;
+  }
+}
+
+/*       Screen >= 1200 px      */
 
 @media screen and (min-width: 1200px) {
   .nav-menu {
@@ -307,15 +361,12 @@ img {
     margin-left: 77px;
     gap: 40px;
   }
-}
-
-.menu-addres {
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
+  .nav-box {
+    width: auto;
+  }
   .menu-addres {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     gap: 40px;
   }
@@ -343,28 +394,6 @@ img {
 
   border-radius: 2px;
   background-color: var(--button-color);
-}
-
-.addres-link {
-  color: var(--main-color);
-  line-height: 1.5;
-  text-decoration: none;
-
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header .nav-link,
-.header .addres-link {
-  transition: color var(--duration-time) var(--timing-function);
-}
-
-.header .nav-link:focus,
-.header .nav-link:hover,
-.header .addres-link:hover,
-.header .addres-link:focus {
-  color: var(--button-color);
 }
 
 .hero {
