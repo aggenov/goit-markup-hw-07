@@ -788,6 +788,9 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
+.clients > .container {
+  padding: 0;
+}
 @media screen and (min-width: 1200px) {
   .clients {
     padding-top: 120px;
@@ -1087,11 +1090,12 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+/* Modal */
 
 .modal {
-  width: 408px;
-  height: 584px;
-  padding: 72px 24px 24px 24px;
+  width: 392px;
+  height: 586px;
+  padding: 72px 16px 24px 16px;
 
   position: absolute;
   left: 50%;
@@ -1107,9 +1111,30 @@ img {
 }
 .modal-title {
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   color: var(--main-color-title);
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    height: 586px;
+    padding: 72px 25px 24px 23px;
+  }
+  .modal-title {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 408px;
+    height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+  .modal-title {
+    margin-bottom: 14px;
+  }
+}
+
 .modal-form {
   font-size: 12px;
   line-height: 1.16667;
@@ -1119,7 +1144,7 @@ img {
 .modal-label {
   margin-bottom: 4px;
   display: inline-block;
-  /* line-height: 1.16667; */
+  line-height: 1.33333333;
   color: var(--main-icon-color);
 }
 
