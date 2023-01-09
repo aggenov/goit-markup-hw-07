@@ -788,15 +788,6 @@ img {
   padding-top: 96px;
   padding-bottom: 96px;
 }
-.clients > .container {
-  padding: 0;
-}
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -809,6 +800,10 @@ img {
   width: 190px;
 }
 @media screen and (min-width: 768px) {
+  .clients > .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
   .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -821,7 +816,15 @@ img {
     width: 168px;
   }
 }
+
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .clients > .container {
+    padding: 0;
+  }
   .clients-list {
     display: flex;
     justify-content: center;
