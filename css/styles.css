@@ -660,6 +660,7 @@ img {
   .feature-item > .text-item {
     font-size: 36px;
     line-height: 1.111111;
+    text-align: start;
   }
 }
 
