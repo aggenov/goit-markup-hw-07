@@ -1314,6 +1314,11 @@ img {
 
   cursor: pointer;
 }
+@media screen and (max-width: 427px) {
+  .modal-button {
+    width: 40vw;
+  }
+}
 
 .modal-button:hover,
 .modal-button:focus {
